@@ -44,8 +44,11 @@ public class LambdaApp
 
         // So, when a class implements a single, abstract method, you can make it a lambda.
         // Just name your object, add an =, put the necessary args, if any, in the parens,
-        // draw a right arrow, and implement your code.
+        // draw a right arrow, and implement your code. In this instance we're overriding run,
+        // which takes no args and returns void
         Runnable r2 = () -> {
+            // Technically you don't need a lambda here, but it would be compare, which would take
+            // two generics of the same type and return an int.
             //Comparator<String> comparator = (o1, o2) -> Integer.compare(o1.length(), o2.length());
             Comparator<String> comparator = Comparator.comparingInt(String::length);
 
