@@ -1,4 +1,4 @@
-package me.alex.tryitout;
+package me.alex.tryitout.worktries;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
  * Hello Lambda!
  *
  */
-public class LambdaApp
+public class LambdaMain
 {
     public static void main( String[] args )
     {

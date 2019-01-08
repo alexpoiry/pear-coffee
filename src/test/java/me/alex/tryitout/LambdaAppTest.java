@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
- * Unit test for simple LambdaApp.
+ * Unit test for simple LambdaMain.
  */
 public class LambdaAppTest
 {

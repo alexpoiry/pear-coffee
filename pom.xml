@@ -21,6 +21,11 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>23.6-jre</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -38,7 +43,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>me.alex.tryitout.LambdaApp</mainClass>
+                  <mainClass>me.alex.tryitout.ps.jfundlang.PrimitiveMain</mainClass>
                 </transformer>
               </transformers>
               <filters>
