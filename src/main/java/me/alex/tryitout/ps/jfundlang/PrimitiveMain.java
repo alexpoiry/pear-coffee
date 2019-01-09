@@ -99,11 +99,7 @@ public class PrimitiveMain {
     System.out.println("(float)1e-50==" + (float)1e-50);
     System.out.println();
 
-    //Conditional assignment:
-    // result = condition ? true-value : false-value;
-    String test = true ? "true" : "false";
-    System.out.print("Testing the code: String test = true ? \"true\" : \"false\";... Result = ");
-    System.out.println(test);
-    System.out.println();
+    //You can declare and assign multiple variables on a single line, e.g.:
+    //int i1 = 10, i2 = 4, diff;
   }
 }
