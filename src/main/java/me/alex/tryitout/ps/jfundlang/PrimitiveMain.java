@@ -65,11 +65,39 @@ public class PrimitiveMain {
     byte tooSmallForInt = (byte) tooBigForByte;
     System.out.print("Casting int value 500 to byte: ");
     System.out.println(tooSmallForInt);
+    System.out.print("Binary value of int (before cast): ");
+    System.out.println(Integer.toBinaryString(tooBigForByte));
+    System.out.print("Binary value of byte (after cast):  ");
+    String s1 = String.format("%8s", Integer.toBinaryString(tooSmallForInt & 0xFF)).replace(' ', '0');
+    System.out.println(s1);
     System.out.println();
+
+    int stillTooBigForByte = 1012;
+    byte stillTooSmallForInt = (byte) stillTooBigForByte;
+    System.out.print("Casting int value 1012 to byte: ");
+    System.out.println(stillTooSmallForInt);
+    System.out.print("Binary value of int (before cast): ");
+    System.out.println(Integer.toBinaryString(stillTooBigForByte));
+    System.out.print("Binary value of byte (after cast):   ");
+    String s2 = String.format("%8s", Integer.toBinaryString(stillTooSmallForInt & 0xFF)).replace(' ', '0');
+    System.out.println(s2);
+    System.out.println();
+
+    int anotherTooBig = 756;
+    byte anotherTooSmall = (byte) anotherTooBig;
+    System.out.print("Casting int value 756 to byte: ");
+    System.out.println(stillTooSmallForInt);
+    System.out.print("Binary value of int (before cast): ");
+    System.out.println(Integer.toBinaryString(anotherTooBig));
+    System.out.print("Binary value of byte (after cast):   ");
+    String s3 = String.format("%8s", Integer.toBinaryString(anotherTooSmall & 0xFF)).replace(' ', '0');
+    System.out.println(s3);
+    System.out.println();
+
 
     int big = 1234567890;
     float approx = big;
-    System.out.print("Assign an int 1234567890 to a float, then cast the float to an int and subtract: ");
+    System.out.print("Assign an int 1234567890 to float X, then cast the float to an int Y and subtract X - Y: ");
     System.out.println(big - (int)approx);
     System.out.println();
 
